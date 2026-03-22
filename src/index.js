@@ -24,7 +24,7 @@ function generatePoem(event) {
     axios.get(apiURL).then(displayPoem);
 
     new Typewriter("#poem", {
-    strings:" La tombe dit à la rose",
+    strings: response.data.answer,
     autoStart: true,
     delay: 1,
     cursor: "",
